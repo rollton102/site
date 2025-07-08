@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание</title>
+    <meta name="description" content="Пример задания">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- defer загрузит JS-файл только после загрузки body -->
+    <script defer src="test.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">kin</div>
+        <div class="header-text">
+            <h1>Создаем отличные сайты</h1>
+            <p>Выполним Ваш заказ на высшем уровне</p>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#benefits">Почему нас выбирают</a></li>
+                <li><a href="#process">Как мы работаем</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#order">ЗАКАЗАТЬ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="slider-section">
+            <h2>Наши услуги</h2>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide active">
+                        <h3>Создание сайтов</h3>
+                        <p>Современные и адаптивные сайты под любые задачи.</p>
+                    </div>
+                    <div class="slide">
+                        <h3>SEO продвижение</h3>
+                        <p>Увеличим трафик и продажи вашего бизнеса.</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Дизайн и брендинг</h3>
+                        <p>Создадим уникальный стиль вашего проекта.</p>
+                    </div>
+                </div>
+                <button class="slider-btn prev">&lt;</button>
+                <button class="slider-btn next">&gt;</button>
+            </div>
+        </section>
+
+        <section id="timer-section">
+            <h2>До конца акции осталось:</h2>
+            <div id="timer" style="font-size: 2em; font-weight: bold; margin-top: 10px;"></div>
+        </section>
+
+        <section id="benefits">
+            <h2>Почему нас выбирают</h2>
+            <ul>
+                <li>Индивидуальный подход к каждому проекту</li>
+                <li>Соблюдение сроков и прозрачность на всех этапах</li>
+                <li>Качественный адаптивный дизайн для всех устройств</li>
+                <li>Надежная техническая поддержка после запуска</li>
+            </ul>
+        </section>
+
+        <section id="process">
+            <h2>Как мы работаем</h2>
+            <ol>
+                <li>Обсуждаем задачу и цели</li>
+                <li>Создаем дизайн и структуру</li>
+                <li>Разрабатываем сайт</li>
+                <li>Запускаем и сопровождаем</li>
+            </ol>
+        </section>
+
+        <section id="portfolio">
+            <h2>Портфолио</h2>
+            <p>Вот примеры наших работ:</p>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">Проект 1</div>
+                <div class="portfolio-item">Проект 2</div>
+                <div class="portfolio-item">Проект 3</div>
+            </div>
+        </section>
+
+        <section id="order">
+            <h2>ЗАКАЗАТЬ</h2>
+            <p>Оставьте заявку, и мы свяжемся с вами в течение дня.</p>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <p>Данные успешно отправлены!</p>
+            <button id="close-modal">Закрыть</button>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p>&copy; 2025 kin. Все права защищены.</p>
+        <p>Тел: +7 (999) 123-45-67 | Email: info@vashweb.ru</p>
+    </footer>
+</body>
+</html>
